@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+}
+
+
+.discord-watermark{
+    width: 200px;
+    height: 55px;
+}
+
+Link .brand-logo{
+    width: 17%;
+    height: 17%;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 150px;
+    gap: 20px;
+}
+
+.social a img{
+    width: 30px;
+    height: 30px;
+}
+
+
+/* ipad */
+
+@media (max-width: 850px) and (min-width:490px){
+    
+    .footer{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px 40px;
+        align-items: center;
+    }
+    
+    
+    .discord-watermark{
+        width: 120px;
+        height: 54px;
+    }
+    
+    .brand-logo{
+        width: 105px;
+        height: 105px;
+        margin: auto;
+        
+    }
+    
+    .social{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 290px;
+    }
+    .social a img{
+        width: 25px;
+        padding-right: 5px;
+    }
+}
+
+
+/* iPhone view */
+@media (max-width: 490px) {
+    
+    .footer{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px 40px;
+        align-items: center;
+        position: relative;
+    }
+    
+    
+    .discord-watermark{
+        width: 60px;
+        height: 31px;
+        position: absolute;
+        left: 20px;
+        top: 70px;
+    }
+    
+    .brand-logo{
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        position: absolute;
+        left: 150px;
+    }
+    
+    .social{
+        display: flex;
+        width: 10px;
+        height: 10px;
+        margin-right: 15px;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 10px;
+        right: 50px;
+    }
+
+    .social a img{
+        width: 15px;
+        height: 15px;
+        padding-right: 5px;
+    }
+
+    .footer-container{
+        margin-bottom: 150px;
+    }
+}
